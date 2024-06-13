@@ -13,11 +13,11 @@ public class FileTransfer extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        from("file:///C://Users//11940//Downloads//camel")
+        from("file:///C://Users//Downloads//camel")
 
                 .log("${headers}")
              //   .log("${body}")
-                .to("file:///C://Users//11940//Downloads//camel//dataprocessed");
+                .to("file:///C://Users//Downloads//camel//dataprocessed");
 
 
         ClassA a = new ClassA();
